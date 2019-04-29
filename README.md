@@ -1,8 +1,8 @@
 # JVM
-
+:smiley::stuck_out_tongue::stuck_out_tongue_closed_eyes:
 ## 常用参数
 
-+ 堆设置
++ 堆设置:heart:
     + -Xms:初始堆大小
     + -Xmx:最大堆大小
     + -Xss:线程栈大小
@@ -24,17 +24,18 @@
 
 ## 经典TomCat优化调优
 
-如果服务器只有一个java虚拟机，并且内存是4G
+如果服务器只有一个java虚拟机，并且内存是4G:bell:
 
-set JAVA_OPTS=  
-    + -Xms4g  
-    + -Xmx4g  
-    + -Xss512k  
-    + -AggressiveOpts  :表示开启所有能优化的优化  
-    + -UseBiasedLocking :表示启用偏向锁[有助于提高"锁"性能的几点建议](https://my.oschina.net/u/3703858/blog/1791973 "有助于提高"锁"性能的几点建议")  
-    + -XX:PermSize=64M :java8没有这个参数了  改为Metaspace  
-    + -XX:MaxPermSize=300M  
-    + -XX:+DisableExplicitGC :禁用显示调用GC //System.gc()  
+set JAVA_OPTS=
+
+  + -Xms4g  
+  + -Xmx4g  
+  + -Xss512k  
+  + -AggressiveOpts  :表示开启所有能优化的优化  
+  + -UseBiasedLocking :表示启用偏向锁[有助于提高"锁"性能的几点建议](https://my.oschina.net/u/3703858/blog/1791973 "有助于提高"锁"性能的几点建议")  
+  + -XX:PermSize=64M :java8没有这个参数了  改为Metaspace  
+  + -XX:MaxPermSize=300M  
+  + -XX:+DisableExplicitGC :禁用显示调用GC //System.gc()  
     
 ##继续
 
