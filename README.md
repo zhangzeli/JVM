@@ -26,15 +26,15 @@
 
 如果服务器只有一个java虚拟机，并且内存是4G
 
-set JAVA_OPTS=
-    + -Xms4g
-    + -Xmx4g
-    + -Xss512k
-    + -AggressiveOpts  :表示开启所有能优化的优化
-    + -UseBiasedLocking :表示启用偏向锁[有助于提高"锁"性能的几点建议](https://my.oschina.net/u/3703858/blog/1791973 "有助于提高"锁"性能的几点建议")
-    + -XX:PermSize=64M :java8没有这个参数了  改为Metaspace
-    + -XX:MaxPermSize=300M
-    + -XX:+DisableExplicitGC :禁用显示调用GC //System.gc()
+set JAVA_OPTS=  
+    + -Xms4g  
+    + -Xmx4g  
+    + -Xss512k  
+    + -AggressiveOpts  :表示开启所有能优化的优化  
+    + -UseBiasedLocking :表示启用偏向锁[有助于提高"锁"性能的几点建议](https://my.oschina.net/u/3703858/blog/1791973 "有助于提高"锁"性能的几点建议")  
+    + -XX:PermSize=64M :java8没有这个参数了  改为Metaspace  
+    + -XX:MaxPermSize=300M  
+    + -XX:+DisableExplicitGC :禁用显示调用GC //System.gc()  
     
 ##继续
 
